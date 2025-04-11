@@ -1,6 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /********** Template CSS **********/
 :root {
-    --primary: #FE5D37;
+    --primary: #271c19;
     --light: #FFF5F3;
     --dark: #103741;
 }
@@ -65,6 +71,11 @@
     border-radius: 50px;
 }
 
+body {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+  }
 
 /*** Heading ***/
 h1,
@@ -459,3 +470,94 @@ h6,
     }
   }
   
+
+/* styles.css */
+
+
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto; /* Ensures centering for smaller screens */
+}
+
+h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.form-container input, select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 18px;
+}
+
+.form-container input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.form-container button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.form-container button:hover {
+    background: #0056b3;
+}
+
+.form-container button:active {
+    transform: scale(0.98);
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #28a745;
+    font-weight: 500;
+}
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    input, select, button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+
+
